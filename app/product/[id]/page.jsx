@@ -1,9 +1,9 @@
-import { products } from "@/lib/data";
+import { fetchProductById } from "@/lib/api";
 import Link from "next/link";
 
-export default function ProductDetailPage({ params }) {
-  const { id } = params;
-  const product = products.find((p) => p.id === parseInt(id));
+export default async function ProductDetailPage({ params }) {
+  const { id } = await params;
+  const product = await fetchProductById(id);
 
   if (!product) {
     return <div className="p-6 text-red-500">Sản phẩm không tồn tại.</div>;
