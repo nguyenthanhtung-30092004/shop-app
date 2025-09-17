@@ -1,31 +1,5 @@
 import ProductCard from "@/components/ProductCard";
-
-const products = [
-  {
-    id: 1,
-    name: "Áo Thun Unisex",
-    price: 150000,
-    image: "https://via.placeholder.com/400",
-  },
-  {
-    id: 2,
-    name: "Quần Jean Slim Fit",
-    price: 350000,
-    image: "https://via.placeholder.com/400",
-  },
-  {
-    id: 3,
-    name: "Giày Sneaker Trắng",
-    price: 500000,
-    image: "https://via.placeholder.com/400",
-  },
-  {
-    id: 4,
-    name: "Áo Khoác Hoodie",
-    price: 250000,
-    image: "https://via.placeholder.com/400",
-  },
-];
+import { products } from "@/lib/data.js";
 
 export default function HomePage() {
   return (
